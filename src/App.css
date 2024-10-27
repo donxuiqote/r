@@ -1,0 +1,113 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+h1, h2{
+  @apply text-primary font-bold;
+};
+
+summary{
+  @apply text-accent
+}
+
+h2{
+  @apply text-4xl mt-5;
+}
+
+
+h4{
+  @apply text-secondary text-xl;
+}
+
+
+
+.scrolling-fade {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  position: absolute; /* Position them absolutely within the container */
+}
+
+.active {
+  opacity: 1;
+  animation: scroll 1.5s forwards;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(100%); /* Start below */
+  }
+  100% {
+    transform: translateY(0); /* End in position */
+  }
+}
+
+section{
+  margin: 0 3.5rem;
+  padding: 1rem 0;
+}
+
+.shadow-me{
+  filter: drop-shadow(0 4px 10px rgba(184, 184, 184, 0.548));
+}
+section div{
+}
+.content{
+  text-align: start;
+}
+
+#root {
+  margin: auto;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  background-color: rebeccapurple
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+    background-color: rebeccapurple;
+  }
+}
+
+.card {
+}
+
+.read-the-docs {
+  color: #888;
+  background-color: rebeccapurple;
+}
+
+iframe{
+  @apply w-[80vw] h-[80vh];
+}
