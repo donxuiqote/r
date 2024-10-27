@@ -189,7 +189,7 @@ const Home = () => {
       <div className="py-18 lg:py-24">
         <section className="py-24">
           <div className="py-20">
-            <h2> Tools, Languages, Labreries, and Frameworks </h2>
+            <h2> Tools, Languages, Libraries, and Frameworks </h2>
           </div>
           <div className="h-full">
             <div className="pb-40 flex h-full flex-wrap p-8 justify-center lg:w-[80vw] lg:m-auto">
