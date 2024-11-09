@@ -51,7 +51,7 @@ const Home = () => {
     react,
   ];
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const phrases = [" web designer", " web developer", " data analyst"];
+  const phrases = [" web designer", " web develop", " data analyst"];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
